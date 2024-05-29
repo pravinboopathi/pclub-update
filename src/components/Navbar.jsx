@@ -1,11 +1,12 @@
 import { useState } from "react";
 import { MdMenu, MdClose } from 'react-icons/md';
-import { Link, useNavigate } from "react-router-dom";
+import { Link, useNavigate, useLocation } from "react-router-dom";
 import logoImg from '../images/logo-removebg-preview (1).png';
 
 const Navbar = () => {
     const [showMenu, setShowMenu] = useState(false);
     const navigate = useNavigate();
+    const location = useLocation();
 
     const toggleMenu = () => {
         setShowMenu(!showMenu);
@@ -21,7 +22,7 @@ const Navbar = () => {
     const navLinks = [
         { name: "Home", path: "/" },
         { name: "Gallery", path: "/gallery" },
-        { name: "Partners", path: "/partners" },
+        { name: "coordinates", path: "/Coordinates" },
         { name: "Projects", path: "/Projects" },
         { name: "Contact us", path: "/Contact" }
     ];
@@ -39,12 +40,17 @@ const Navbar = () => {
                     {navLinks.map((link, index) => (
                         <li key={index} className="text-xl cursor-pointer md:my-0 my-2 text-left md:text-center">
                             {link.path.startsWith("#") ? (
-                                <Link to={link.path} className="md:ml-8 text-white duration-300 hover:text-[#3CB371]">{link.name}</Link>
+                                <Link to={link.path} className={`md:ml-8 duration-300 ${location.pathname === link.path ? 'text-[#3CB371]' : 'text-white hover:text-[#3CB371]'}`}>
+                                    {link.name}
+                                </Link>
                             ) : (
-                                <div onClick={() => handleNavigation(link.path)} className="md:ml-8 text-white duration-300 hover:text-[#3CB371]">{link.name}</div>
+                                <div onClick={() => handleNavigation(link.path)} className={`md:ml-8 duration-300 ${location.pathname === link.path ? 'text-[#3CB371]' : 'text-white hover:text-[#3CB371]'}`}>
+                                    {link.name}
+                                </div>
                             )}
                         </li>
                     ))}
+
                     <Link to="/join">
                         <button className="md:ml-4 transition-all hover:bg-[#28A745] hover:text-black font-semibold rounded-2xl px-3 py-2 border border-[#ffff] text-[#ffff]">
                             Join Us
