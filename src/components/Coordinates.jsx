@@ -17,10 +17,10 @@ const officeBearers = [
 const Coordinators= () => {
   return (
     <div className="bg-[#010101] text-white min-h-screen p-6 md:p-12">
-      <h1 className="text-5xl font-extrabold text-yellow-500 text-center mb-12 ">Coordinators</h1>
+      <h1 className="text-4xl md:text-5xl font-extrabold text-yellow-500 text-center mb-12 ">Co-ordinators</h1>
 
       <section className="mb-16">
-        <h2 className="text-4xl font-semibold text-[#007F00] mb-8 text-center relative ">
+        <h2 className="md:text-4xl text-2xl font-semibold text-[#007F00] mb-8 text-center relative ">
           Staff Coordinators
           <span className="block h-1 w-24  mt-2 bg-yellow-500 mx-auto rounded"></span>
         </h2>
@@ -40,7 +40,7 @@ const Coordinators= () => {
       </section>
 
       <section>
-        <h2 className="text-4xl font-semibold text-[#007F00] mb-8 text-center relative">
+        <h2 className="md:text-4xl text-2xl font-semibold text-[#007F00] mb-8 text-center relative">
           Office Bearers
           <span className="block h-1 w-24 bg-yellow-500 mt-2 mx-auto rounded"></span>
         </h2>

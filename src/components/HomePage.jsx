@@ -5,7 +5,7 @@ const HomePage = () => {
         <div>
             <div id='Home' className="flex items-center justify-center mt-28">
                 <div className="text-center px-6 md:px-0">
-                    <h1 style={{ lineHeight: "1.3" }} className="text-[#F8B607] text-3xl md:text-6xl font-semibold leading-tight">
+                    <h1 style={{ lineHeight: "1.3" }} className="text-[#F8B607] text-3xl md:text-6xl font-semibold leading-tight font-raleway">
                         Empowering Coding at <br /> College Club
                     </h1>
                     <p className="text-gray-400 mt-4 pb-10 text-sm md:text-2xl">
