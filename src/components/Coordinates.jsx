@@ -22,11 +22,13 @@ const Coordinators= () => {
                   <img src={coordinator.img} alt={coordinator.name} className="w-full h-full object-cover" />
                 </div>
                 <h3 className="text-3xl font-bold">{coordinator.name}</h3>
+                <p className="text-lg text-gray-400 text-center mt-2">{coordinator.dept}</p>
                 <p className="text-lg text-gray-400 text-center mt-2">{coordinator.intro}</p>
               </div>
             </div>
           ))}
         </div>
+        <hr className="border-gray-700 mt-5 w-full" />
       </section>
 
       <section>
@@ -38,17 +40,18 @@ const Coordinators= () => {
           {officeBearers.map((bearer, index) => (
             <div key={index} className="relative bg-gray-800 p-6 rounded-lg shadow-lg transform hover:scale-105 transition-transform duration-300">
               <div className="flex flex-col items-center">
-                <div className="relative w-32 h-32 bg-[#f8b607] rounded-full overflow-hidden border-4 border-[#007F00] mb-4">
+                <div className="relative w-32 h-32 bg-[#f8b607] rounded-full overflow-hidden border-4 border-teal-600 mb-4">
                   <img src={bearer.img} alt={bearer.name} className="w-full h-full object-cover" />
                 </div>
                 <h3 className="text-2xl font-bold">{bearer.name}</h3>
+                <p className="text-lg text-gray-400">{bearer.dept}</p>
                 <p className="text-lg text-gray-400">{bearer.role}</p>
-                <p className="mt-4 text-base text-center">{bearer.intro}</p>
               </div>
             </div>
           ))}
-          <hr className="border-gray-700 mt-5" />
+          
         </div>
+        
       </section>
     </div>
   );
