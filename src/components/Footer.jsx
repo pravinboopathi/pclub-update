@@ -14,7 +14,7 @@ const Footer = () => {
             <p className="text-center text-xl md:text-2xl font-medium text-gray-200">Join Programming Club for unmatched coding experiences and growth.</p>
             <div className="flex items-center justify-center gap-5 mt-10 md:mt-10">
                 <button onClick={()=>handleNavigation('/join')} className="hover:bg-yellow-600 bg-secondary font-semibold text-[#171717] transition-all text-xl md:text-3xl rounded-2xl py-3 px-5">Join Now</button>
-                <button onClick={()=> handleNavigation('/contact')} className="p-4 rounded-2xl text-white text-xl md:text-2xl border border-yellow-500 hover:text-black hover:bg-yellow-500 transition-all">Contact Us</button>
+                <button onClick={()=> handleNavigation('/join')} className="p-4 rounded-2xl text-white text-xl md:text-2xl border border-yellow-500 hover:text-black hover:bg-yellow-500 transition-all">Contact Us</button>
             </div>
         </div>
     );

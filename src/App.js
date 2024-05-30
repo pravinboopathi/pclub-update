@@ -7,7 +7,6 @@ import Join from "./components/Join";
 import Coordinates from "./components/Coordinates";
 import Winners from "./components/Winners";
 import Magazine from "./components/Magazine";
-import Contact from "./components/Contact";
 import PageTransition from "./components/PageTransition";
 import ScrollToTop from "./components/ScrollToTop";
 
@@ -24,7 +23,6 @@ function App() {
                 <Route path="/coordinates" element={<Coordinates/>}/>
                 <Route path="/Winners" element={<Winners/>}/>
                 <Route path="/Magazine" element={<Magazine/>}/>
-                <Route path="/contact" element={<Contact/>}/>
                 
             </Routes>
             </PageTransition>

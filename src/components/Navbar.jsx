@@ -25,7 +25,6 @@ const Navbar = () => {
         { name: "Co-ordinators", path: "/Coordinates" },
         { name: "Winners", path: "/Winners" },
         { name: "Magazine", path: "/Magazine" },
-        { name: "Contact us", path: "/Contact" },
     ];
 
     return (
