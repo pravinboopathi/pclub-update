@@ -2,9 +2,9 @@ import React from 'react';
 import { useNavigate } from 'react-router-dom';
 
 const Magazine = () => {
-    const navigate = useNavigate();
-    const magazineUrl = "https://heyzine.com/flip-book/4203a3c023.html";
 
+    const magazineUrl = "https://heyzine.com/flip-book/4203a3c023.html";
+    const navigate = useNavigate();
     const handleNavigation=(path)=>{
         navigate(path);
     }

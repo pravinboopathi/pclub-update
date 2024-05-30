@@ -3,46 +3,81 @@
 
 
 
-import w1Img from '../images/w1.png';
-import w2Img from '../images/w2.png';
-import w3Img from '../images/w3.png';
+import vergina from '../images/winners/vergina.png';
+import pravin from '../images/winners/pravin.png';
+import venkatesh from '../images/winners/venkatesh.png';
+
+import kaariniya from '../images/winners/kaariniya.png'
+import karuppasamy from '../images/winners/karuppasamy.png'
 
 import socialw1Img from '../images/social-w1.jpg';
 import socialw2Img from '../images/social-w2.jpg';
 import socialw3Img from '../images/social-w3.jpg';
 
 const WinnerCompDetails = [
+
+    // Byte Battle 
     {
         title: 'Byte Battle S1',
         date: 'Sep 21, 2023',
         winners: [
             {
                 name: 'Vergina Sharley MS',
-                regNo: '123456',
-                department: 'BCA (S1)',
+                regNo: '22105065',
+                department: 'BCA',
                 year: 'II',
-                img: w2Img,
-                socialImg: socialw1Img
+                img: vergina,
+                socialImg: socialw1Img,
+                prize: "I",
             },
             {
                 name: 'Pravin B',
                 regNo: '23127035',
-                department: 'Bsc CS with DA (S1)',
+                department: 'Bsc CS DA',
                 year: 'I',
-                img: w1Img,
-                socialImg: socialw2Img
+                img: pravin,
+                socialImg: socialw2Img,
+                prize : "II",
             },
             {
                 name: 'Venkatesh B',
-                regNo: '789012',
-                department: 'Bsc CS (S1)',
+                regNo: '22106062',
+                department: 'Bsc CS',
                 year: 'II',
-                img: w3Img,
+                img: venkatesh,
                 socialImg: socialw3Img,
+                prize : "III",
             },
         ],
     },
 
+
+    // Web Wizard 
+
+    {
+        title: 'Web Wizard',
+        date: 'Feb 21, 2023',
+        winners: [
+            {
+                name: 'Kaariniya SA',
+                regNo: '22127025',
+                department: 'Bsc CS DA',
+                year: 'II',
+                img: kaariniya,
+                prize : "I",
+                // socialImg: socialw1Img
+            },
+            {
+                name: 'Karuppasamy M',
+                regNo: '22107096',
+                department: 'Bsc IT',
+                year: 'II',
+                img: karuppasamy,
+                prize:"II",
+                // socialImg: socialw2Img
+            },
+        ],
+    },
     
     // Add more competitions as needed
 ];
