@@ -13,8 +13,8 @@ import sampleImg from '../images/logo-removebg-preview (1).png'
 
 export const staffCoordinators = [
     { name: 'Dr.N.Sumathi', img: HODimg, intro: 'Head of the Department' },
-    { name: 'Dr.M.Pranesh', img: AssociateProf, intro: 'Associate Proffesor' },
-    { name: 'Dr.S.Mohan', img: AssociateProf2, intro: 'Associate Proffesor' }
+    { name: 'Dr.M.Pranesh', img: AssociateProf, intro: 'Associate Profesor' },
+    { name: 'Dr.S.Mohan', img: AssociateProf2, intro: 'Associate Profesor' }
 ];
 
 export const officeBearers = [
